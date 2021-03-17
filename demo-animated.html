@@ -113,7 +113,7 @@
     };
 
     function handleClick(position, state) {
-      console.log(position, state)
+      // console.log(position, state)
 
       if (position[0]) {
         let modal = document.getElementById('modal-one')
@@ -121,14 +121,9 @@
         if (modal.classList.contains("hidden")) {
           modal.classList.remove("hidden")
         } else {
-          // console.log("hello")
           modal.classList.add("hidden")
         }
       }
-
-      // if (position[0]) {
-      //   let modal = document.getElementById('modal-one')
-      // }
     }
   </script>
 </body>
