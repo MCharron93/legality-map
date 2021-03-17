@@ -49,7 +49,7 @@
           // Changes the colour on mouseover, can be changed to any color
           st[0].onmouseover = function () {
             // Redraws the element with the desired color
-            console.log(state)
+            // console.log(state)
             if (state != "al" && state != "ar" && state != "wi" && state != "in" && state != "vt" && state != "ri") {
               st.animate({ fill: "green" }, 500);
               st.toFront();
@@ -69,6 +69,13 @@
             st.toFront();
             R.safari();
           };
+
+          // NOTE new section to handle onclick events with mouse
+          st[0].onclick = function () {
+            // console.log("Hello from onclick event")
+            console.log(state)
+
+          }
 
         })(usRaphael[state], state);
       }
