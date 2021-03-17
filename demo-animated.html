@@ -100,14 +100,24 @@
 
           // NOTE new section to handle onclick events with mouse
           st[0].onclick = function () {
-            console.log(state)
-
+            // console.log(state)
+            // let modal = document.getElementById('modal-one')
+            // console.log(modal)
+            // modal.remove("hidden")
+            handleClick(st, state)
           }
 
         })(usRaphael[state], state);
       }
 
     };
+
+    function handleClick(position, state) {
+      console.log(state)
+      let modal = document.getElementById('modal-one')
+      console.log(modal)
+      modal.remove("hidden")
+    }
   </script>
 </body>
 
