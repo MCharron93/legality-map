@@ -9,35 +9,38 @@
 
 <body>
 
-  <div id="container"></div>
-  <!-- /container -->
+  <div id="container">
 
-  <div id="modal-one" class="hidden">
-    <div class="modal-header">
-      <h4>Alabama</h4>
-    </div>
-    <div class="modal-body">
-      <p>The new legislation, Senate Bill 226, was sponsored by Republican Senator Arthur Orr at the beginning of
-        February 2016. And within a few months, the bill passed on May 4th, 2016. Then, a few days later, on May 10th,
-        2016, Alabama State Governor Robert Bentley signed the legislation into law.
-        <br>
-        The bill itself states:
+    <div id="modal-one" class="hidden">
+      <div class="modal-header">
+        <h4>Alabama</h4>
+      </div>
+      <div class="modal-body">
+        <p>The new legislation, Senate Bill 226, was sponsored by Republican Senator Arthur Orr at the beginning of
+          February 2016. And within a few months, the bill passed on May 4th, 2016. Then, a few days later, on May 10th,
+          2016, Alabama State Governor Robert Bentley signed the legislation into law.
+          <br>
+          The bill itself states:
 
-        “New synthetic substances are being created which are not controlled under the provisions of existing state law
-        but which have a potential for abuse similar to or greater than that for substances controlled under existing
-        state law. These new synthetic substances are called ‘synthetic controlled substances or synthetic controlled
-        substance analogues’ and can be designed to produce a desired pharmacological effect and to evade the
-        controlling statutory provisions. Synthetic controlled substances or synthetic controlled substance analogues
-        are being manufactured, distributed, possessed, and used as substitutes for controlled substances.”
+          “New synthetic substances are being created which are not controlled under the provisions of existing state
+          law
+          but which have a potential for abuse similar to or greater than that for substances controlled under existing
+          state law. These new synthetic substances are called ‘synthetic controlled substances or synthetic controlled
+          substance analogues’ and can be designed to produce a desired pharmacological effect and to evade the
+          controlling statutory provisions. Synthetic controlled substances or synthetic controlled substance analogues
+          are being manufactured, distributed, possessed, and used as substitutes for controlled substances.”
 
-        And it goes on to list mitragynine and hydroxymitragynine (sic) within the bill for synthetic substances.
-        However, neither mitragynine nor 7-hydroxymitragynine is a synthetic compound. Both are naturally occurring
-        alkaloids found in the kratom plant. Still, even though kratom compounds are not synthetic, the state law
-        continues to view kratom products and the plant as an illegal substance in Alabama at this time. The addition of
-        both molecules added onto the bill cements the ban.
-      </p>
+          And it goes on to list mitragynine and hydroxymitragynine (sic) within the bill for synthetic substances.
+          However, neither mitragynine nor 7-hydroxymitragynine is a synthetic compound. Both are naturally occurring
+          alkaloids found in the kratom plant. Still, even though kratom compounds are not synthetic, the state law
+          continues to view kratom products and the plant as an illegal substance in Alabama at this time. The addition
+          of
+          both molecules added onto the bill cements the ban.
+        </p>
+      </div>
     </div>
   </div>
+  <!-- /container -->
 
   <script src="raphael-min.js"></script>
   <script src="./us-map-svg.js"></script>
@@ -100,18 +103,15 @@
 
           // NOTE new section to handle onclick events with mouse
           st[0].onclick = function () {
-            // console.log(state)
-            // let modal = document.getElementById('modal-one')
-            // console.log(modal)
-            // modal.remove("hidden")
             handleClick(st, state)
           }
 
         })(usRaphael[state], state);
       }
-
     };
 
+
+    // NOTE Will need to change modal info based on the state that is being selected, passed state which can be used in filter function
     function handleClick(position, state) {
       // console.log(position, state)
 

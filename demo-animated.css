@@ -1,5 +1,24 @@
+*{
+    border: 1px solid black;
+}
+
 #modal-one{
+    height: fit-content;
+    width: fit-content;
     justify-content: center;
+    border: 2px solid darkgrey;
+
+    padding: 15px;
+}
+
+.modal-header{
+    font-size: x-large;
+    text-align: center;
+}
+
+.modal-body{
+    font-size: medium;
+    text-align: left;
 }
 
 .hidden{
