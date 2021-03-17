@@ -35,17 +35,14 @@
       for (var state in usMap) {
         // console.log("hello from state in usMap")
         usRaphael[state] = R.path(usMap[state]).attr(attr);
-        console.log(usRaphael)
       }
 
       //Do Work on Map
       for (var state in usRaphael) {
         // console.log("hello from state in usRaphael")
-        // usRaphael[state].color = Raphael.getColor();
 
         (function (st, state) {
           // Draws changes when creating the map, st[0] is the whatever state the user is currently on
-          // console.log(st[0])
 
           st[0].style.cursor = "pointer";
 
