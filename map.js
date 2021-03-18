@@ -1,3 +1,5 @@
+// import stateCollection from "./stateCollection.js"
+
 // Creates the map onLoad with default colour values
 window.onload = function () {
     // console.log("Hello from onLoad")
@@ -18,6 +20,13 @@ window.onload = function () {
     for (var state in usMap) {
       // console.log("hello from state in usMap")
       usRaphael[state] = R.path(usMap[state]).attr(attr);
+    }
+    
+    for(var state in stateCollection){
+        const mapCollection = {}
+        // console.log(stateCollection[state])
+        // console.log(mapCollection)
+        mapCollection += stateCollection[state]
     }
 
     //Do Work on Map
@@ -70,8 +79,9 @@ window.onload = function () {
   // NOTE Will need to change modal info based on the state that is being selected, passed state which can be used in filter function
   function handleClick(position, state) {
     // console.log(position, state)
-    let selectedState = state
-    let stateCollection = state
+    // let selectedState = state
+    // let stateCollection = stateCollection
+    // console.log(stateCollection)
 
     if (position[0]) {
       let modal = document.getElementById('modal-one')
