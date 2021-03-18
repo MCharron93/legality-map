@@ -9,10 +9,10 @@
 
 <body>
   <main class="section-main">
-    <div id="modal-one" class="hidden" onclick="closeModal()">
+    <div id="modal-one" class="hidden">
       <div id="modal-content">
         <div class="modal-header">
-          <h4>Alabama</h4><span class="close-modal" onclick="closeModal()">&times;</span>
+          <h4>Alabama</h4><span class="close-modal" id="close-modal">&times;</span>
         </div>
         <div class="modal-body">
           <p>The new legislation, <a
@@ -56,7 +56,7 @@
 
   <script src="raphael-min.js"></script>
   <script src="./us-map-svg.js"></script>
-  <script src="map.js"></script>
+  <script src="map.js" type="module"></script>
 </body>
 
 </html>

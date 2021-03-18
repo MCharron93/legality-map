@@ -1,11 +1,12 @@
-// import stateCollection from "./stateCollection.js"
+import stateCollection from "./stateCollection.js"
+const allStates = stateCollection
 
 // Creates the map onLoad with default colour values
 window.onload = function () {
-    // console.log("Hello from onLoad")
+    addListeners()
 
     var R = Raphael("map-container", 1000, 900),
-      attr = {
+    attr = {
         "fill": "#d3d3d3",
         "stroke": "#fff",
         "stroke-opacity": "1",
@@ -18,15 +19,7 @@ window.onload = function () {
 
     //Draw Map and store Raphael paths
     for (var state in usMap) {
-      // console.log("hello from state in usMap")
       usRaphael[state] = R.path(usMap[state]).attr(attr);
-    }
-    
-    for(var state in stateCollection){
-        const mapCollection = {}
-        // console.log(stateCollection[state])
-        // console.log(mapCollection)
-        mapCollection += stateCollection[state]
     }
 
     //Do Work on Map
@@ -71,6 +64,15 @@ window.onload = function () {
     }
   };
 
+  function addListeners(){
+      let modal = document.getElementById("modal-one")
+      modal.addEventListener("click", closeModal)
+
+      let modalClose = document.getElementById("close-modal")
+      modal.addEventListener("click", closeModal)
+  }
+
+
   function closeModal() {
     let modal = document.getElementById('modal-one')
     modal.classList.add("hidden")
@@ -79,9 +81,8 @@ window.onload = function () {
   // NOTE Will need to change modal info based on the state that is being selected, passed state which can be used in filter function
   function handleClick(position, state) {
     // console.log(position, state)
-    // let selectedState = state
-    // let stateCollection = stateCollection
-    // console.log(stateCollection)
+    let selectedState = state
+    // console.log(allStates)
 
     if (position[0]) {
       let modal = document.getElementById('modal-one')
@@ -92,6 +93,4 @@ window.onload = function () {
         modal.classList.add("hidden")
       }
     }
-
-
   }
