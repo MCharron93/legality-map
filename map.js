@@ -70,6 +70,8 @@ window.onload = function () {
   // NOTE Will need to change modal info based on the state that is being selected, passed state which can be used in filter function
   function handleClick(position, state) {
     // console.log(position, state)
+    let selectedState = state
+    let stateCollection = state
 
     if (position[0]) {
       let modal = document.getElementById('modal-one')
@@ -80,4 +82,6 @@ window.onload = function () {
         modal.classList.add("hidden")
       }
     }
+
+
   }
