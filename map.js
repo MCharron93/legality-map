@@ -76,21 +76,34 @@ window.onload = function () {
   function closeModal() {
     let modal = document.getElementById('modal-one')
     modal.classList.add("hidden")
+
+    let arkModal = document.getElementById("arkansas-modal")
+    let alabModal = document.getElementById("alabama-modal")
+
+    console.log(!arkModal.classList.contains("hidden"))
+
+    if(!arkModal.classList.contains("hidden")){
+        arkModal.classList.add("hidden")
+    } else if(!alabModal.classList.contains("hidden")){
+        alabModal.classList.add("hidden")
+    }
   }
 
   // NOTE Will need to change modal info based on the state that is being selected, passed state which can be used in filter function
   function handleClick(position, state) {
-    // console.log(position, state)
     let selectedState = state
-    // console.log(allStates)
 
-    if (position[0]) {
-      let modal = document.getElementById('modal-one')
+    let arkModal = document.getElementById("arkansas-modal")
+    let alabModal = document.getElementById("alabama-modal")
+    
+    let modalParent = document.getElementById("modal-one")
+    modalParent.classList.remove("hidden")
 
-      if (modal.classList.contains("hidden")) {
-        modal.classList.remove("hidden")
-      } else {
-        modal.classList.add("hidden")
-      }
+
+    if(state === "ar" && arkModal.classList.contains("hidden")){
+        arkModal.classList.remove("hidden")
+    } else if(state === "al" && alabModal.classList.contains("hidden")){
+        alabModal.classList.remove("hidden")
     }
+
   }
