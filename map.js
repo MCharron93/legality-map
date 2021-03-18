@@ -1,5 +1,5 @@
-import stateCollection from "./stateCollection.js"
-const allStates = stateCollection
+// import stateCollection from "./stateCollection.js"
+// const allStates = stateCollection
 
 // Creates the map onLoad with default colour values
 window.onload = function () {
@@ -79,13 +79,17 @@ window.onload = function () {
 
     let arkModal = document.getElementById("arkansas-modal")
     let alabModal = document.getElementById("alabama-modal")
-
-    console.log(!arkModal.classList.contains("hidden"))
+    let indModal = document.getElementById("indiana-modal")
 
     if(!arkModal.classList.contains("hidden")){
         arkModal.classList.add("hidden")
+
     } else if(!alabModal.classList.contains("hidden")){
         alabModal.classList.add("hidden")
+
+    } else if(!indModal.classList.contains("hidden")){
+        indModal.classList.add("hidden")
+
     }
   }
 
@@ -95,6 +99,7 @@ window.onload = function () {
 
     let arkModal = document.getElementById("arkansas-modal")
     let alabModal = document.getElementById("alabama-modal")
+    let indModal = document.getElementById("indiana-modal")
     
     let modalParent = document.getElementById("modal-one")
     modalParent.classList.remove("hidden")
@@ -104,6 +109,8 @@ window.onload = function () {
         arkModal.classList.remove("hidden")
     } else if(state === "al" && alabModal.classList.contains("hidden")){
         alabModal.classList.remove("hidden")
+    } else if(state === "in" && indModal.classList.contains("hidden")){
+        indModal.classList.remove("hidden")
     }
 
   }
