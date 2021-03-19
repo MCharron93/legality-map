@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     outline: 1px solid black;
 }
@@ -65,4 +69,8 @@ section{
 
 .hidden{
     display: none;
+}
+
+.height-box{
+    height: 80vh;
 }
