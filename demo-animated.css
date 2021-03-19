@@ -1,15 +1,25 @@
 html{
     scroll-behavior: smooth;
 }
-
-section{
+/* 
+* {
     outline: 1px solid black;
+} */
+
+.fact-header{
+    height: fit-content;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
 }
 
 #map-container{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 #modal-one{
@@ -76,10 +86,27 @@ section{
     height: fit-content;
 }
 
+.ledger-row{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.column-col{
+    width: fit-content;
+}
+
 .custom-fonts{
     font-size: 18pt;
 }
 
 .added-padding{
     padding: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.centered-text{
+    text-align: center !important;
 }
