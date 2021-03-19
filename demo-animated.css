@@ -72,5 +72,10 @@ section{
 }
 
 .height-box{
-    height: 80vh;
+    padding: 25px;
+    height: fit-content;
+}
+
+.custom-fonts{
+    font-size: xx-large;
 }
