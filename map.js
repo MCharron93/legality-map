@@ -35,17 +35,27 @@ window.onload = function () {
         st[0].onmouseover = function () {
           // Redraws the element with the desired color
           // console.log(state)
-          if (state != "al" && state != "ar" && state != "wi" && state != "in" && state != "vt" && state != "ri") {
+          if (state != "al" && state != "ar" && state != "wi" && state != "in" && state != "vt" && state != "ri" && state != "ca" && state != "co" && state != "il" && state != "tn" && state != "ms" && state != "fl" && state != "nc" && state != "nh" && state != "nv" && state != "ut" && state != "az" && state != "ga") {
             st.animate({ fill: "green" }, 500);
+            st.toFront();
+            R.safari();
+          } 
+          else if(state != "ca" && state != "co" && state != "il" && state != "tn" && state != "ms" && state != "fl" && state != "nc" && state != "nh" && state != "nv" && state != "ut" && state != "az" && state != "ga"){
+            console.log("hello from red")
+            st.animate({fill: "red"}, 500);
+            st.toFront();
+            R.safari();
+          }
+          else if(state != "nv" && state != "ut" && state != "az" && state != "ga"){
+            st.animate({fill: "yellow"}, 500);
             st.toFront();
             R.safari();
           }
           else {
-            st.animate({ fill: "red" }, 500);
+            st.animate({ fill: "blue" }, 500);
             st.toFront();
             R.safari();
           }
-
         };
 
         st[0].onmouseout = function () {
@@ -63,6 +73,7 @@ window.onload = function () {
       })(usRaphael[state], state);
     }
   };
+
 
   function addListeners(){
       let modal = document.getElementById("modal-one")
