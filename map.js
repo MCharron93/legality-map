@@ -5,7 +5,7 @@
 window.onload = function () {
     addListeners()
 
-    var R = Raphael("map-container", 1000, 900),
+    var R = Raphael("map-container", 1000, 700),
     attr = {
         "fill": "#d3d3d3",
         "stroke": "#fff",
