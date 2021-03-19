@@ -110,3 +110,17 @@ html{
 .centered-text{
     text-align: center !important;
 }
+
+/* NOTE Media queries for responsive displays */
+
+@media only screen and (max-width: 944px){
+    
+    .column-col{
+        width: 50%;
+    }
+
+    .custom-fonts{
+        font-size: 16pt;
+    }
+
+}
