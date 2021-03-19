@@ -1,5 +1,9 @@
-/* *{
-    border: 1px solid black;
+section{
+    outline: 1px solid black;
+}
+
+/* .section-main{
+    height: 80vh;
 } */
 
 #map-container{
