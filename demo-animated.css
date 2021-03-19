@@ -1,10 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     outline: 1px solid black;
 }
-
-/* .section-main{
-    height: 80vh;
-} */
 
 #map-container{
     display: flex;
@@ -69,4 +69,17 @@ section{
 
 .hidden{
     display: none;
+}
+
+.height-box{
+    padding: 25px;
+    height: fit-content;
+}
+
+.custom-fonts{
+    font-size: 18pt;
+}
+
+.added-padding{
+    padding: 25px;
 }
