@@ -34,18 +34,30 @@ window.onload = function () {
         // Changes the colour on mouseover, can be changed to any color
         st[0].onmouseover = function () {
           // Redraws the element with the desired color
-          // console.log(state)
-          if (state != "al" && state != "ar" && state != "wi" && state != "in" && state != "vt" && state != "ri") {
+          let greenStates = Boolean(state != "al" && state != "ar" && state != "wi" && state != "in" && state != "vt" && state != "ri" && state != "ca" && state != "co" && state != "il" && state != "tn" && state != "ms" && state != "fl" && state != "nc" && state != "nh" && state != "nv" && state != "ut" && state != "az" && state != "ga")
+          let redStates = Boolean(state != "ca" && state != "co" && state != "il" && state != "tn" && state != "ms" && state != "fl" && state != "nc" && state != "nh" && state != "nv" && state != "ut" && state != "az" && state != "ga")
+          let yellowStates = Boolean(state != "nv" && state != "ut" && state != "az" && state != "ga")
+
+          if (greenStates) {
             st.animate({ fill: "green" }, 500);
+            st.toFront();
+            R.safari();
+          } 
+          else if(redStates){
+            st.animate({fill: "red"}, 500);
+            st.toFront();
+            R.safari();
+          }
+          else if(yellowStates){
+            st.animate({fill: "yellow"}, 500);
             st.toFront();
             R.safari();
           }
           else {
-            st.animate({ fill: "red" }, 500);
+            st.animate({ fill: "blue" }, 500);
             st.toFront();
             R.safari();
           }
-
         };
 
         st[0].onmouseout = function () {
@@ -63,6 +75,7 @@ window.onload = function () {
       })(usRaphael[state], state);
     }
   };
+
 
   function addListeners(){
       let modal = document.getElementById("modal-one")
