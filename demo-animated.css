@@ -113,8 +113,16 @@ html{
 
 /* NOTE Media queries for responsive displays */
 
-@media only screen and (max-width: 944px){
+@media only screen and (min-width: 944px){
     
+    .desktop{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 945px){
+
     .desktop{
         display: none;
     }
@@ -122,15 +130,8 @@ html{
     .column-col{
         width: 50%;
     }
-
+    
     .custom-fonts{
         font-size: 16pt;
-    }
-
-}
-
-@media only screen and (min-width: 945px){
-    .mobile{
-        display: none;
     }
 }
