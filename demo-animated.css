@@ -94,7 +94,7 @@ html{
 }
 
 .column-col{
-    width: 30%;
+    width: 45%;
     background-color: aqua; 
 }
 
@@ -114,20 +114,9 @@ html{
 
 /* NOTE Media queries for responsive displays */
 
-@media (min-width: 946px){
-    
-    #mobile{
-        display: none;
-    }
-    
-}
 
 @media (max-width: 800px){
 
-    #desktop{
-        display: none;
-    }
-    
     #map-container{
         width: 100%;
     }
