@@ -14,6 +14,7 @@ window.onload = function () {
         "stroke-miterlimit": "4",
         "stroke-width": "0.75",
         "stroke-dasharray": "none",
+        // "viewBox": "0 0 1000 600"
       },
       usRaphael = {};
 

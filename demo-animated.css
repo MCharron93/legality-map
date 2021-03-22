@@ -124,13 +124,12 @@ html{
     text-align: center !important;
 }
 
-
 /* NOTE Media queries for responsive displays */
 
 @media (max-width: 1190px){
     #custom-margin{
-        margin-left: 3.5em;
-        margin-right: 3.5em;
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
 }
@@ -139,7 +138,14 @@ html{
 @media (max-width: 800px){
 
     .column-col{
-        width: 50%;
+        width: 80%;
     }
     
+}
+
+@media (max-width: 700px){
+    #custom-margin{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
