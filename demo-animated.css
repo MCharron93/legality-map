@@ -1,10 +1,15 @@
 html{
     scroll-behavior: smooth;
 }
-/* 
-* {
-    outline: 1px solid black;
-} */
+
+#entire-body{
+    background-color: #efefef;
+}
+
+#custom-margin{
+    margin-left: 6em;
+    margin-right: 6em;
+}
 
 .fact-header{
     height: fit-content;
@@ -14,12 +19,20 @@ html{
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
+    font-size: 18pt;
 }
 
 #map-container{
     display: flex;
+    height: 600px;
     justify-content: center;
     padding: 25px;
+}
+
+#map-row{
+    border: 1px solid rgb(220, 214, 214);
+    border-radius: 8px;
+    background-color: #fefefe;
 }
 
 #modal-one{
@@ -94,11 +107,11 @@ html{
 }
 
 .column-col{
-    width: fit-content;
+    width: 50%;
 }
 
 .custom-fonts{
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .added-padding{
@@ -109,4 +122,30 @@ html{
 
 .centered-text{
     text-align: center !important;
+}
+
+/* NOTE Media queries for responsive displays */
+
+@media (max-width: 1190px){
+    #custom-margin{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+}
+
+
+@media (max-width: 800px){
+
+    .column-col{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 700px){
+    #custom-margin{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }

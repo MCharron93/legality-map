@@ -2,297 +2,338 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animated United States map made with Raphael</title>
   <link rel="stylesheet" href="demo-animated.css">
 </head>
 
-<body>
-  <div class="fact-header">
-    <h1>Kratom Legality Within the United States</h1>
-  </div>
-  <main class="section-main height-added">
+<body id="entire-body">
+  <section id="custom-margin">
+    <div class="fact-header">
+      <h1>Kratom Legality Within the United States</h1>
+    </div>
 
-
-    <section id="modals">
-      <div id="modal-one" class="hidden">
-        <div id="alabama-modal" class="modal-content hidden">
-          <div class="modal-header">
-            <h2>Alabama</h2><span class="close-modal" id="close-modal">&times;</span>
+    <main class="section-main height-added">
+      <section id="modals">
+        <div id="modal-one" class="hidden">
+          <div id="alabama-modal" class="modal-content hidden">
+            <div class="modal-header">
+              <h2>Alabama</h2><span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p>The new legislation, <a
+                  href="https://trackbill.com/bill/alabama-senate-bill-226-controlled-substances-additional-compounds-included-in-schedule-i-based-on-chemical-names-known-as-kratom-sec-20-2-23-amd/1263491/"
+                  target="_blank">
+                  Senate Bill 226</a>, was sponsored by Republican Senator Arthur Orr at the beginning of
+                February 2016. And within a few months, the bill passed on May 4th, 2016. Then, a few days later, on May
+                10th,
+                2016, Alabama State Governor Robert Bentley signed the legislation into law.
+              </p>
+              <p>
+                The bill itself states:
+              </p>
+              <p class="ital-text">
+                “New synthetic substances are being created which are not controlled under the provisions of existing
+                state
+                law
+                but which have a potential for abuse similar to or greater than that for substances controlled under
+                existing
+                state law. These new synthetic substances are called ‘synthetic controlled substances or synthetic
+                controlled
+                substance analogues’ and can be designed to produce a desired pharmacological effect and to evade the
+                controlling statutory provisions. Synthetic controlled substances or synthetic controlled substance
+                analogues
+                are being manufactured, distributed, possessed, and used as substitutes for controlled substances.”
+              </p>
+              <p>
+                And it goes on to list mitragynine and hydroxymitragynine (sic) within the bill for synthetic
+                substances.
+                However, neither mitragynine nor 7-hydroxymitragynine is a synthetic compound. Both are naturally
+                occurring
+                alkaloids found in the kratom plant. Still, even though kratom compounds are not synthetic, the state
+                law
+                continues to view kratom products and the plant as an illegal substance in Alabama at this time. The
+                addition
+                of
+                both molecules added onto the bill cements the ban.
+              </p>
+            </div>
           </div>
-          <div class="modal-body">
-            <p>The new legislation, <a
-                href="https://trackbill.com/bill/alabama-senate-bill-226-controlled-substances-additional-compounds-included-in-schedule-i-based-on-chemical-names-known-as-kratom-sec-20-2-23-amd/1263491/"
-                target="_blank">
-                Senate Bill 226</a>, was sponsored by Republican Senator Arthur Orr at the beginning of
-              February 2016. And within a few months, the bill passed on May 4th, 2016. Then, a few days later, on May
-              10th,
-              2016, Alabama State Governor Robert Bentley signed the legislation into law.
-            </p>
-            <p>
-              The bill itself states:
-            </p>
-            <p class="ital-text">
-              “New synthetic substances are being created which are not controlled under the provisions of existing
-              state
-              law
-              but which have a potential for abuse similar to or greater than that for substances controlled under
-              existing
-              state law. These new synthetic substances are called ‘synthetic controlled substances or synthetic
-              controlled
-              substance analogues’ and can be designed to produce a desired pharmacological effect and to evade the
-              controlling statutory provisions. Synthetic controlled substances or synthetic controlled substance
-              analogues
-              are being manufactured, distributed, possessed, and used as substitutes for controlled substances.”
-            </p>
-            <p>
-              And it goes on to list mitragynine and hydroxymitragynine (sic) within the bill for synthetic substances.
-              However, neither mitragynine nor 7-hydroxymitragynine is a synthetic compound. Both are naturally
-              occurring
-              alkaloids found in the kratom plant. Still, even though kratom compounds are not synthetic, the state law
-              continues to view kratom products and the plant as an illegal substance in Alabama at this time. The
-              addition
-              of
-              both molecules added onto the bill cements the ban.
-            </p>
+
+
+          <div id="arkansas-modal" class="modal-content hidden">
+            <div class="modal-header">
+              <h2>Arkansas</h2><span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p>The Arkansas Department of Health was notified by Dr. Thomas Atkinson, M.D., from the Springdale
+                Treatment
+                Center in Springdale, AR, that patients at the addiction treatment center had used kratom before. He
+                informed the Department of Health that kratom exhibits an opiate agonist action in subjects. He issued a
+                warning about kratom because he believed the products shouldn’t be available to get bought by Arkansas
+                citizens at local businesses. After hearing the doctor’s argument, the health department decided to take
+                the
+                matter into its own hands.
+              </p>
+              <p>
+                Both mitragynine and 7-hydroxymitragynine were placed as a scheduled I narcotic
+                on <a
+                  href="https://www.pharmacyboard.arkansas.gov/wp-content/uploads/2020/04/controlled_substances_list.pdf"
+                  target="_blank">
+                  Arkansas’s List of Controlled Substances</a>. You can find both alkaloids listed under
+                Article II—Schedule
+                I—(c) Opium Derivatives. The two compounds were The Department of Health’s Center for Health Protection
+                held
+                a public hearing on September 1st, 2015, where public comments were allowed on the subject. But when the
+                comment period had expired, the Department of Health did not receive any public comments on the topic.
+                So,
+                the proposed bill went into effect on February 1st, 2016.
+              </p>
+            </div>
+          </div>
+
+          <div id="indiana-modal" class="modal-content hidden">
+            <div class="modal-header">
+              <h2>Indiana</h2><span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p>The legislators in Indiana introduced <a href="http://iga.in.gov/legislative/2014/bills/senate/305"
+                  target="_blank">Senate Bill 305</a> at the beginning of
+                2014. The bill was authored by
+                three Republican Senators: James Merritt, Ronnie Alting, and Brent Steele. It also had two other
+                senators,
+                Republican Senator Joseph Zakas and Democratic Senator Lonnie Randolph, to help co-author the measure.
+                The
+                proposed legislation became effective on July 1st, 2014.
+              </p>
+              <p>
+                The bill listed both mitragynine and 7-hydroxymitragynine under a section labeled as “Synthetic Drugs.”
+                And
+                for the proposal, it defined synthetic drugs as “a substance containing one (1) or more of the following
+                chemical compounds, including an analog of the compound.”
+              </p>
+              <p>
+                But, as we all know, kratom is a naturally occurring tree in the rainforests of Southeast Asia. There’s
+                nothing synthetic about either molecular compound. Nevertheless, the wording on the bill has not been
+                amended to reflect the truth. So, to this day, Indiana state law still looks at the alkaloids in kratom
+                as
+                synthetic substances per the wording in the bill.
+              </p>
+            </div>
+          </div>
+
+
+          <div id="rhodeIsland-modal" class="modal-content hidden">
+            <div class="modal-header">
+              <h2>Indiana</h2><span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p><a href="http://iga.in.gov/legislative/2014/bills/senate/305" target="_blank">Senate Bill 812</a> was
+                introduced by Democratic Senators Elizabeth
+                Crowley, Ana Quezada, and Susan Sosnowski in April 2017. And the Uniform Controlled Substances Act was
+                signed into law by the governor on June 27th, 2017. However, the introduction of the bill went before
+                the
+                legislators without any kratom alkaloids listed on it. But the Director of Health sent a notice to the
+                Secretary of State to add mitragynine and 7-hydroxymitragynine to the Controlled Substances Act behind
+                closed doors.
+              </p>
+              <p>
+                The American Kratom Association was working with two of Rhode Island’s Democratic State Representatives,
+                Brian Patrick Kennedy and Grace Diaz, to overturn the ban with <a
+                  href="https://trackbill.com/bill/rhode-island-house-bill-5542-an-act-relating-to-food-and-drugs-kratom-consumer-protection-act-regulates-the-distribution-of-food-products-containing-the-drug-kratom-a-drug-of-concern-for-its-stimulant-and-sedative-effects-to-consumers-by-the-department-of-health-effective-september-1-2019/1708312/"
+                  target="_blank">House
+                  Bill 5542</a>. They wrote and presented
+                the measure, the Kratom Consumer Protection Act, in February 2019. But by March 2019, the House
+                Committee
+                on Health, Education, and Welfare recommended to hold the measure back for further scientific study.
+                They
+                tried again in January 2020. But the same thing happened.
+              </p>
+              <p>
+                Then Democratic Senator Joshua Miller introduced another version of the Kratom Consumer Protection
+                Act,<a href="https://www.billtrack50.com/BillDetail/1217637" target="_blank">
+                  Senate Bill 2687</a>, to the Senate Judiciary on February 27th, 2020. But so far, no action has been
+                taken on
+                the bill. So we’ll have to wait and see where it goes.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
 
-
-        <div id="arkansas-modal" class="modal-content hidden">
-          <div class="modal-header">
-            <h2>Arkansas</h2><span class="close-modal" id="close-modal">&times;</span>
-          </div>
-          <div class="modal-body">
-            <p>The Arkansas Department of Health was notified by Dr. Thomas Atkinson, M.D., from the Springdale
-              Treatment
-              Center in Springdale, AR, that patients at the addiction treatment center had used kratom before. He
-              informed the Department of Health that kratom exhibits an opiate agonist action in subjects. He issued a
-              warning about kratom because he believed the products shouldn’t be available to get bought by Arkansas
-              citizens at local businesses. After hearing the doctor’s argument, the health department decided to take
-              the
-              matter into its own hands.
-            </p>
-            <p>
-              Both mitragynine and 7-hydroxymitragynine were placed as a scheduled I narcotic
-              on <a
-                href="https://www.pharmacyboard.arkansas.gov/wp-content/uploads/2020/04/controlled_substances_list.pdf"
-                target="_blank">
-                Arkansas’s List of Controlled Substances</a>. You can find both alkaloids listed under
-              Article II—Schedule
-              I—(c) Opium Derivatives. The two compounds were The Department of Health’s Center for Health Protection
-              held
-              a public hearing on September 1st, 2015, where public comments were allowed on the subject. But when the
-              comment period had expired, the Department of Health did not receive any public comments on the topic. So,
-              the proposed bill went into effect on February 1st, 2016.
-            </p>
-          </div>
-        </div>
-
-        <div id="indiana-modal" class="modal-content hidden">
-          <div class="modal-header">
-            <h2>Indiana</h2><span class="close-modal" id="close-modal">&times;</span>
-          </div>
-          <div class="modal-body">
-            <p>The legislators in Indiana introduced <a href="http://iga.in.gov/legislative/2014/bills/senate/305"
-                target="_blank">Senate Bill 305</a> at the beginning of
-              2014. The bill was authored by
-              three Republican Senators: James Merritt, Ronnie Alting, and Brent Steele. It also had two other senators,
-              Republican Senator Joseph Zakas and Democratic Senator Lonnie Randolph, to help co-author the measure. The
-              proposed legislation became effective on July 1st, 2014.
-            </p>
-            <p>
-              The bill listed both mitragynine and 7-hydroxymitragynine under a section labeled as “Synthetic Drugs.”
-              And
-              for the proposal, it defined synthetic drugs as “a substance containing one (1) or more of the following
-              chemical compounds, including an analog of the compound.”
-            </p>
-            <p>
-              But, as we all know, kratom is a naturally occurring tree in the rainforests of Southeast Asia. There’s
-              nothing synthetic about either molecular compound. Nevertheless, the wording on the bill has not been
-              amended to reflect the truth. So, to this day, Indiana state law still looks at the alkaloids in kratom as
-              synthetic substances per the wording in the bill.
-            </p>
-          </div>
-        </div>
-
-
-        <div id="rhodeIsland-modal" class="modal-content hidden">
-          <div class="modal-header">
-            <h2>Indiana</h2><span class="close-modal" id="close-modal">&times;</span>
-          </div>
-          <div class="modal-body">
-            <p><a href="http://iga.in.gov/legislative/2014/bills/senate/305" target="_blank">Senate Bill 812</a> was
-              introduced by Democratic Senators Elizabeth
-              Crowley, Ana Quezada, and Susan Sosnowski in April 2017. And the Uniform Controlled Substances Act was
-              signed into law by the governor on June 27th, 2017. However, the introduction of the bill went before the
-              legislators without any kratom alkaloids listed on it. But the Director of Health sent a notice to the
-              Secretary of State to add mitragynine and 7-hydroxymitragynine to the Controlled Substances Act behind
-              closed doors.
-            </p>
-            <p>
-              The American Kratom Association was working with two of Rhode Island’s Democratic State Representatives,
-              Brian Patrick Kennedy and Grace Diaz, to overturn the ban with <a
-                href="https://trackbill.com/bill/rhode-island-house-bill-5542-an-act-relating-to-food-and-drugs-kratom-consumer-protection-act-regulates-the-distribution-of-food-products-containing-the-drug-kratom-a-drug-of-concern-for-its-stimulant-and-sedative-effects-to-consumers-by-the-department-of-health-effective-september-1-2019/1708312/"
-                target="_blank">House
-                Bill 5542</a>. They wrote and presented
-              the measure, the Kratom Consumer Protection Act, in February 2019. But by March 2019, the House Committee
-              on Health, Education, and Welfare recommended to hold the measure back for further scientific study. They
-              tried again in January 2020. But the same thing happened.
-            </p>
-            <p>
-              Then Democratic Senator Joshua Miller introduced another version of the Kratom Consumer Protection Act,<a
-                href="https://www.billtrack50.com/BillDetail/1217637" target="_blank">
-                Senate Bill 2687</a>, to the Senate Judiciary on February 27th, 2020. But so far, no action has been
-              taken on
-              the bill. So we’ll have to wait and see where it goes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="map">
-      <div id="map-container">
+      <section id="table-of-contents" class="ledger-row">
         <div class="column-col">
-          <h2 class="centered-text">Map Ledger</h2>
+          <h2 class="heading-font">Table of Contents</h2>
           <ul class="custom-fonts">
-            <li>Blue: Legal with the state passing the KCPA</li>
-            <li>Green: Legal within the state</li>
-            <li>Yellow: Legal in some parts of the state</li>
-            <li>Red: Illegal and banned from use, purchase, or possesion</li>
+            <li>
+              <a href="#kratom-facts">
+                Undestanding Kratom
+              </a>
+            </li>
+            <li>
+              <a href="#kratom-laws">
+                Kratom Legality
+              </a>
+            </li>
+            <li>
+              <a href="#consumer-law">
+                Consumer Protections
+              </a>
+            </li>
+            <li>
+              <a href="#recent-updates">
+                Recent Updates
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <section id="table-of-contents" class="ledger-row added-padding">
-      <div class="column-col">
-        <h2 class="heading-font">Table of Contents</h2>
-        <ul class="custom-fonts">
-          <li>
-            <a href="#kratom-facts">
-              Undestanding Kratom
-            </a>
-          </li>
-          <li>
-            <a href="#kratom-laws">
-              Kratom Legality
-            </a>
-          </li>
-          <li>
-            <a href="#consumer-law">
-              Consumer Protections
-            </a>
-          </li>
-          <li>
-            <a href="#recent-updates">
-              Recent Updates
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="body-content" class="height-box">
-      <div id="kratom-facts">
-        <h3>What is Kratom?</h3>
-        <p>
-          Mitragyna speciosa, commonly known as “kratom,” is a tropical evergreen plant native to Southeast Asian
-          countries.The trees are indigenous to countries such as Thailand, Malaysia, and Indonesia. The surrounding
-          countries and
-          provinces in the region
-          are also home to the native species. All of those territories provide the much-needed climate and
-          environmental
-          conditions that are necessary for the plant to thrive in the wilderness.
-        </p>
-        <p>
-          The leaves of a kratom tree were used for generations by rural peasants in that section of the globe as an
-          herbal remedy to battle pain, fatigue, diarrhea, and as a substitute for opium. We also find it was used by
-          natives in religious ceremonies and to relax after working in the uncompromising heat outside on the farms.
-
-          The kratom leaves in their raw form have been used in traditional medicine in its native regions
-          for hundreds of years. Now, kratom is becoming popular in modern western society for its various effects, as
-          well as providing some users relief from certain complaints. Health professionals have expressed concerns
-          about the leaf being marketed as a “medicinal treatment” because its effects and potential applications have
-          yet to be clinically tested, and it is not approved or regulated by the Food and Drug Administration (FDA).
-          The pharmacology research that exists on kratom isn’t comprehensive, but some users have reported short-term
-          improvements to their quality of life.
-        </p>
-        <p>
-          But even though the tree’s leaves were known as a folk remedy to inhabitants in the area for centuries, it
-          never gained any traction in western civilization until Peter Willem Korthals—a botanist with the Dutch East
-          India Service—discovered its existence in 1839. Korthals originally coined the tree with the name Stephegyne
-          speciosa. The scientific name and classification went through several iterations throughout the years until
-          George Darby Haviland, a British surgeon, gave it the name in 1859 that we still know it as today: Mitragyna
-          speciosa.
-
-          The plant would soon fade into obscurity afterward until we see a resurgence of interest in the alkaloids
-          found inside the plant at the beginning of the 21st century, played in part by the ongoing opioid epidemic
-          prevalent in American culture.
-      </div>
+      </section>
 
 
-      <div>
-        <a id="kratom-laws">
+      <section id="map-row">
+        <div id="map-container" class="block-row">
+          <!-- NOTE insert map svg here -->
+        </div>
 
-          <div id="us-laws">
-            <h3>
-              Laws Surrounding Kratom in the US
-            </h3>
-            <p>
-
-            </p>
+        <!-- NOTE Map Ledger -->
+        <div id="table-of-contents" class="ledger-row added-padding">
+          <div class="column-col">
+            <h2 class="">Map Ledger</h2>
+            <ul class="custom-fonts">
+              <li>Blue: Legal with the state passing the KCPA</li>
+              <li>Green: Legal within the state</li>
+              <li>Yellow: Legal in some parts of the state</li>
+              <li>Red: Illegal and banned from use, purchase, or possesion</li>
+            </ul>
           </div>
+        </div>
+      </section>
 
-          <div id="global-laws">
-            <h3>
-              Laws Surrounding Kratom Globally
-            </h3>
-            <p>
 
-            </p>
-          </div>
-
-        </a>
-      </div>
-
-      <div>
-        <a id="consumer-law">
-          <h3>
-            Kratom Consumer Protection Act
-          </h3>
-          In short, the Kratom Consumer Protection Act, also known as the KCPA, is a piece of legislation that allows
-          consumers access to legal Kratom whilst mitigating the market and reducing the sale of unregulated,
-          dangerous,
-          harmful Kratom products. The intention of the act is to ensure only approved Kratom is sold and distributed
-          amongst the market. It also aims to stop the complete ban on Kratom by protecting its users and disproving
-          the
-          myths, rumors, and misconceptions about the natural product.
-
-          The act concentrates on important information about the product, including its definition, the regulations
-          on
-          doses, and the prohibition of dangerous sales. It also moves for the requirement of Kratom vendors, creators
-          and sellers to have specific, informative labels on all products containing Kratom. This was they can stay
-          within the parameters of the FDA. Finally, it pushes for the department of agriculture and food to create
-          and
-          enforce standards within the growing and production of Kratom.
-        </a>
-      </div>
-
-      <div>
-        <a id="recent-updates">
-          <h3>
-            Recent Updates in Kratom
-          </h3>
+      <section id="body-content" class="height-box">
+        <div id="kratom-facts">
+          <h3>What is Kratom?</h3>
           <p>
-
+            Mitragyna speciosa, commonly known as “kratom,” is a tropical evergreen plant native to Southeast Asian
+            countries.The trees are indigenous to countries such as Thailand, Malaysia, and Indonesia. The surrounding
+            countries and
+            provinces in the region
+            are also home to the native species. All of those territories provide the much-needed climate and
+            environmental
+            conditions that are necessary for the plant to thrive in the wilderness.
           </p>
-        </a>
-      </div>
-    </section>
+          <p>
+            The leaves of a kratom tree were used for generations by rural peasants in that section of the globe as an
+            herbal remedy to battle pain, fatigue, diarrhea, and as a substitute for opium. We also find it was used by
+            natives in religious ceremonies and to relax after working in the uncompromising heat outside on the farms.
+
+            The kratom leaves in their raw form have been used in traditional medicine in its native regions
+            for hundreds of years. Now, kratom is becoming popular in modern western society for its various effects, as
+            well as providing some users relief from certain complaints. Health professionals have expressed concerns
+            about the leaf being marketed as a “medicinal treatment” because its effects and potential applications have
+            yet to be clinically tested, and it is not approved or regulated by the Food and Drug Administration (FDA).
+            The pharmacology research that exists on kratom isn’t comprehensive, but some users have reported short-term
+            improvements to their quality of life.
+          </p>
+          <p>
+            But even though the tree’s leaves were known as a folk remedy to inhabitants in the area for centuries, it
+            never gained any traction in western civilization until Peter Willem Korthals—a botanist with the Dutch East
+            India Service—discovered its existence in 1839. Korthals originally coined the tree with the name Stephegyne
+            speciosa. The scientific name and classification went through several iterations throughout the years until
+            George Darby Haviland, a British surgeon, gave it the name in 1859 that we still know it as today: Mitragyna
+            speciosa.
+
+            The plant would soon fade into obscurity afterward until we see a resurgence of interest in the alkaloids
+            found inside the plant at the beginning of the 21st century, played in part by the ongoing opioid epidemic
+            prevalent in American culture.
+        </div>
+
+
+        <div>
+          <a id="kratom-laws">
+
+            <div id="us-laws">
+              <h3>
+                Laws Surrounding Kratom in the US
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sequi. Corrupti ex aspernatur
+                corporis cumque ullam qui vero nemo architecto saepe nam iure accusantium, minus itaque, aut, officia
+                molestias dolores.
+                Sit mollitia eum voluptatem accusamus delectus autem, excepturi laborum suscipit sed harum aperiam,
+                tempore perferendis doloremque illo quae quis rerum saepe veritatis sunt culpa repellendus numquam?
+                Impedit perspiciatis animi ratione.
+                Iste totam aut minima, laborum non quis? Qui eveniet, ad eos deleniti ratione ex rerum voluptatem quis
+                ipsum officiis itaque quos nam, ab necessitatibus consequuntur non commodi possimus officia placeat.
+              </p>
+            </div>
+
+            <div id="global-laws">
+              <h3>
+                Laws Surrounding Kratom Globally
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium inventore ducimus magnam
+                dolore
+                totam blanditiis iste, tempora pariatur, ullam sed consequatur laboriosam provident explicabo nobis iure
+                consequuntur rerum! Sequi.
+                Modi asperiores reiciendis at maxime harum molestias blanditiis recusandae, quisquam totam cumque
+                molestiae incidunt obcaecati consectetur iusto cum quis impedit necessitatibus in nemo unde? Porro
+                debitis
+                corrupti eos aperiam nulla?
+                Quae commodi, ipsam maiores quas labore sint odit fuga! Quaerat dolorum beatae vero? Laborum
+                exercitationem quas aliquam, earum laboriosam nihil tenetur quia reiciendis et doloremque. Illo, dolor
+                dolores. Veniam, culpa.
+                Repellat obcaecati quaerat alias cum repellendus, dignissimos rem, officia, amet voluptate accusantium
+                non. Dolor et ratione repudiandae. Incidunt praesentium provident aspernatur. Ex nihil iste, consequatur
+                eius laudantium neque placeat possimus.
+                Ut quis nemo facilis? Commodi, sed quam laborum similique facilis optio deleniti quisquam eligendi
+                nesciunt, tenetur sapiente repellat! Soluta voluptate optio porro, sequi eos sint ipsa id facilis.
+                Molestias, saepe?
+              </p>
+            </div>
+
+          </a>
+        </div>
+
+        <div>
+          <a id="consumer-law">
+            <h3>
+              Kratom Consumer Protection Act
+            </h3>
+            In short, the Kratom Consumer Protection Act, also known as the KCPA, is a piece of legislation that allows
+            consumers access to legal Kratom whilst mitigating the market and reducing the sale of unregulated,
+            dangerous,
+            harmful Kratom products. The intention of the act is to ensure only approved Kratom is sold and distributed
+            amongst the market. It also aims to stop the complete ban on Kratom by protecting its users and disproving
+            the
+            myths, rumors, and misconceptions about the natural product.
+
+            The act concentrates on important information about the product, including its definition, the regulations
+            on
+            doses, and the prohibition of dangerous sales. It also moves for the requirement of Kratom vendors, creators
+            and sellers to have specific, informative labels on all products containing Kratom. This was they can stay
+            within the parameters of the FDA. Finally, it pushes for the department of agriculture and food to create
+            and
+            enforce standards within the growing and production of Kratom.
+          </a>
+        </div>
+
+        <div>
+          <a id="recent-updates">
+            <h3>
+              Recent Updates in Kratom
+            </h3>
+            <p>
+
+            </p>
+          </a>
+        </div>
+      </section>
+  </section>
   </main>
-  <!-- /container -->
 
   <script src="raphael-min.js"></script>
   <script src="./us-map-svg.js"></script>
