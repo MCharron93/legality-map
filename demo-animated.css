@@ -6,6 +6,11 @@ html{
     background-color: #efefef;
 }
 
+#custom-margin{
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
 .fact-header{
     height: fit-content;
     width: 100%;
@@ -14,7 +19,7 @@ html{
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
-    font-size: 22pt;
+    font-size: 18pt;
 }
 
 #map-container{
@@ -24,7 +29,8 @@ html{
 }
 
 #map-row{
-    border: 1px solid darkgray;
+    border: 1px solid rgb(220, 214, 214);
+    border-radius: 8px;
     background-color: #fefefe;
 }
 
@@ -101,7 +107,6 @@ html{
 
 .column-col{
     width: 45%;
-    background-color: aqua; 
 }
 
 .custom-fonts{
@@ -119,6 +124,17 @@ html{
 }
 
 /* NOTE Media queries for responsive displays */
+
+@media (max-width: 1190px){
+    #custom-margin{
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+    }
+
+    svg{
+        width: 950px;
+    }
+}
 
 
 @media (max-width: 800px){
