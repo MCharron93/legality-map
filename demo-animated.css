@@ -24,6 +24,7 @@ html{
 
 #map-container{
     display: flex;
+    height: 600px;
     justify-content: center;
     padding: 25px;
 }
@@ -106,11 +107,11 @@ html{
 }
 
 .column-col{
-    width: 45%;
+    width: 50%;
 }
 
 .custom-fonts{
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .added-padding{
@@ -131,9 +132,6 @@ html{
         margin-right: 3.5em;
     }
 
-    svg{
-        width: 950px;
-    }
 }
 
 
