@@ -22,6 +22,10 @@ html{
     padding: 25px;
 }
 
+#map-row{
+    border: 1px solid darkgray;
+}
+
 #modal-one{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -99,7 +103,7 @@ html{
 }
 
 .custom-fonts{
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .added-padding{
