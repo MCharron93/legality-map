@@ -25,6 +25,7 @@ html{
 #map-container{
     display: flex;
     height: 600px;
+    width: 100%;
     justify-content: center;
     padding: 25px;
 }
