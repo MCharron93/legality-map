@@ -95,10 +95,11 @@ html{
 
 .column-col{
     width: 30%;
+    background-color: aqua; 
 }
 
 .custom-fonts{
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .added-padding{
@@ -113,25 +114,27 @@ html{
 
 /* NOTE Media queries for responsive displays */
 
-@media only screen and (min-width: 944px){
+@media (min-width: 946px){
     
-    .desktop{
+    #mobile{
         display: none;
     }
     
 }
 
-@media only screen and (max-width: 945px){
+@media (max-width: 800px){
 
-    .desktop{
+    #desktop{
         display: none;
+    }
+    
+    #map-container{
+        width: 100%;
     }
 
     .column-col{
         width: 50%;
+        background-color: purple !important;
     }
     
-    .custom-fonts{
-        font-size: 16pt;
-    }
 }
