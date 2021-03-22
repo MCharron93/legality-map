@@ -25,7 +25,6 @@ html{
 #map-container{
     display: flex;
     height: 600px;
-    width: 100%;
     justify-content: center;
     padding: 25px;
 }
@@ -125,6 +124,7 @@ html{
     text-align: center !important;
 }
 
+
 /* NOTE Media queries for responsive displays */
 
 @media (max-width: 1190px){
@@ -137,10 +137,6 @@ html{
 
 
 @media (max-width: 800px){
-
-    #map-container{
-        width: 100%;
-    }
 
     .column-col{
         width: 50%;
