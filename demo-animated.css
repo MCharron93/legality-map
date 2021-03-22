@@ -132,6 +132,14 @@ svg{
     width: 1000px;
 }
 
+#body-content{
+    font-size: 16pt;
+}
+
+#kratom-img-one{
+    width: 100%;
+    height: auto;
+}
 /* NOTE Media queries for responsive displays */
 
 @media (max-width: 1188px){
@@ -151,6 +159,10 @@ svg{
 }
 
 @media (max-width: 600px){
+    #body-content{
+        padding: 15px;
+    }
+    
     .fact-header{
         font-size: 20pt;
         padding-top: 0px;
@@ -160,4 +172,6 @@ svg{
     .column-col{
         width:90%;
     }
+
+
 }
