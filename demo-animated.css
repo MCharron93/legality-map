@@ -1,10 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
-/* 
-* {
-    outline: 1px solid black;
-} */
+
+#entire-body{
+    background-color: #efefef;
+}
 
 .fact-header{
     height: fit-content;
@@ -14,6 +14,7 @@ html{
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
+    font-size: 22pt;
 }
 
 #map-container{
@@ -24,6 +25,7 @@ html{
 
 #map-row{
     border: 1px solid darkgray;
+    background-color: #fefefe;
 }
 
 #modal-one{
@@ -127,7 +129,6 @@ html{
 
     .column-col{
         width: 50%;
-        background-color: purple !important;
     }
     
 }
