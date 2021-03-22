@@ -29,6 +29,10 @@ html{
     padding: 25px;
 }
 
+#map-container > svg{
+    max-width: 1000px;
+}
+
 #map-row{
     border: 1px solid rgb(220, 214, 214);
     border-radius: 8px;
@@ -124,14 +128,17 @@ html{
     text-align: center !important;
 }
 
+svg{
+    width: 1000px;
+}
+
 /* NOTE Media queries for responsive displays */
 
-@media (max-width: 1190px){
+@media (max-width: 1188px){
     #custom-margin{
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: .25em;
+        margin-right: .25em;
     }
-
 }
 
 
@@ -141,11 +148,4 @@ html{
         width: 80%;
     }
     
-}
-
-@media (max-width: 700px){
-    #custom-margin{
-        margin-left: 1em;
-        margin-right: 1em;
-    }
 }
