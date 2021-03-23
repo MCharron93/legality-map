@@ -137,8 +137,15 @@ svg{
 }
 
 #kratom-img-one{
-    width: 100%;
+    width: 50%;
     height: auto;
+    border: 2px solid rgb(186, 186, 186);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.4);
+}
+
+.photo-centered{
+    display: flex;
+    justify-content: center;
 }
 /* NOTE Media queries for responsive displays */
 
@@ -163,6 +170,12 @@ svg{
         padding: 15px;
     }
     
+
+    #kratom-img-one{
+        width: 100%;
+        height: auto;
+    }
+
     .fact-header{
         font-size: 20pt;
         padding-top: 0px;
@@ -173,5 +186,6 @@ svg{
         width:90%;
     }
 
+    
 
 }
