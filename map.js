@@ -7,7 +7,7 @@ window.onload = function () {
 
     var R = Raphael("map-container", 1000, 600),
     attr = {
-        "fill": "#d3d3d3",
+        "fill": "#bfbfbf",
         "stroke": "#fff",
         "stroke-opacity": "1",
         "stroke-linejoin": "round",
@@ -62,7 +62,7 @@ window.onload = function () {
 
         st[0].onmouseout = function () {
           // console.log("hello from mouseout")
-          st.animate({ fill: "#d3d3d3" }, 500);
+          st.animate({ fill: "#bfbfbf" }, 500);
           st.toFront();
           R.safari();
         };
